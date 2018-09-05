@@ -27,7 +27,7 @@ from numpy.random import seed
 from numpy.random import randn
 from scipy.stats import pearsonr
 seed(1)
-data1 = 20 * rand(1000) + 100
+data1 = 20 * randn(1000) + 100
 data2 = data1 + (10 * randn(1000) + 50)
 # calculate Pearson's correlation
 corr, p = pearsonr(data1, data2)
