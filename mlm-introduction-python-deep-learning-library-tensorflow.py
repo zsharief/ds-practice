@@ -39,7 +39,7 @@ train = optimizer.minimize(loss)
 
 ## initialize all tf variables before starting
 init = tf.initialize_all_variables()
-init = tf.global_variables_initializer
+# init = tf.global_variables_initializer()
 ## above step required for tf.Variables
 
 ## launch the graph
