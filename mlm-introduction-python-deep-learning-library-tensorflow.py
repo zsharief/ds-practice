@@ -52,3 +52,6 @@ for step in range(201):
     if step % 20 == 0:
         print(step, sess.run(W), sess.run(b))
 ## learns best fit is W:[0.1], b:[0.3]
+
+## close session to free up some resources
+sess.close()
